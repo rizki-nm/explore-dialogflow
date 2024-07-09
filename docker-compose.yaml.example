@@ -1,0 +1,10 @@
+services:
+  api:
+    container_name: api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: explore-robolabs
+    ports:
+      - 8080:8080
+    restart: always
